@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3337C80B24E130D30022C95E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C80A24E130D30022C95E /* AppDelegate.m */; };
+		3337C81424E130D30022C95E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3337C81224E130D30022C95E /* Main.storyboard */; };
+		3337C81624E130D70022C95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3337C81524E130D70022C95E /* Assets.xcassets */; };
+		3337C81924E130D70022C95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3337C81724E130D70022C95E /* LaunchScreen.storyboard */; };
+		3337C81C24E130D70022C95E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C81B24E130D70022C95E /* main.m */; };
+		3337C82624E130D70022C95E /* RWNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C82524E130D70022C95E /* RWNavigationBarTests.m */; };
+		3337C83124E130D70022C95E /* RWNavigationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C83024E130D70022C95E /* RWNavigationBarUITests.m */; };
+		3337C84024E132B90022C95E /* RWAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C83F24E132B90022C95E /* RWAController.m */; };
+		3337C85724E1384A0022C95E /* RWCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C85624E1384A0022C95E /* RWCController.m */; };
+		3337C85B24E140CA0022C95E /* RWSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C85A24E140CA0022C95E /* RWSwizzle.m */; };
+		3337C85E24E1434B0022C95E /* RWWeakObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C85D24E1434B0022C95E /* RWWeakObjectContainer.m */; };
+		3337C86124E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C86024E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m */; };
+		3337C86424E149520022C95E /* UIViewController+RWNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C86324E149520022C95E /* UIViewController+RWNavigationBarTransition.m */; };
+		3337C86624E236990022C95E /* RWBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C86524E236990022C95E /* RWBController.m */; };
+		3337C87224E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C87124E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m */; };
+		3337C87B24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C87A24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m */; };
+		64BC76086E179A0458A17A51 /* libPods-RWNavigationBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3337C82224E130D70022C95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3337C7FE24E130D30022C95E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3337C80524E130D30022C95E;
+			remoteInfo = RWNavigationBar;
+		};
+		3337C82D24E130D70022C95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3337C7FE24E130D30022C95E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3337C80524E130D30022C95E;
+			remoteInfo = RWNavigationBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3337C80624E130D30022C95E /* RWNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3337C80924E130D30022C95E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3337C80A24E130D30022C95E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3337C80F24E130D30022C95E /* RWAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWAController.h; sourceTree = "<group>"; };
+		3337C81324E130D30022C95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3337C81524E130D70022C95E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3337C81824E130D70022C95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3337C81A24E130D70022C95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3337C81B24E130D70022C95E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3337C82124E130D70022C95E /* RWNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3337C82524E130D70022C95E /* RWNavigationBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWNavigationBarTests.m; sourceTree = "<group>"; };
+		3337C82724E130D70022C95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3337C82C24E130D70022C95E /* RWNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3337C83024E130D70022C95E /* RWNavigationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWNavigationBarUITests.m; sourceTree = "<group>"; };
+		3337C83224E130D70022C95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3337C83E24E132B90022C95E /* RWBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWBController.h; sourceTree = "<group>"; };
+		3337C83F24E132B90022C95E /* RWAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWAController.m; sourceTree = "<group>"; };
+		3337C85524E1384A0022C95E /* RWCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWCController.h; sourceTree = "<group>"; };
+		3337C85624E1384A0022C95E /* RWCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWCController.m; sourceTree = "<group>"; };
+		3337C85924E140CA0022C95E /* RWSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWSwizzle.h; sourceTree = "<group>"; };
+		3337C85A24E140CA0022C95E /* RWSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWSwizzle.m; sourceTree = "<group>"; };
+		3337C85C24E1434B0022C95E /* RWWeakObjectContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWWeakObjectContainer.h; sourceTree = "<group>"; };
+		3337C85D24E1434B0022C95E /* RWWeakObjectContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWWeakObjectContainer.m; sourceTree = "<group>"; };
+		3337C85F24E145B80022C95E /* UINavigationController+RWNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RWNavigationBarTransition.h"; sourceTree = "<group>"; };
+		3337C86024E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RWNavigationBarTransition.m"; sourceTree = "<group>"; };
+		3337C86224E149520022C95E /* UIViewController+RWNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RWNavigationBarTransition.h"; sourceTree = "<group>"; };
+		3337C86324E149520022C95E /* UIViewController+RWNavigationBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RWNavigationBarTransition.m"; sourceTree = "<group>"; };
+		3337C86524E236990022C95E /* RWBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBController.m; sourceTree = "<group>"; };
+		3337C87024E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStatusBarManager+RWStatusBarAlpha.h"; sourceTree = "<group>"; };
+		3337C87124E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStatusBarManager+RWStatusBarAlpha.m"; sourceTree = "<group>"; };
+		3337C87924E29AC70022C95E /* UIViewController+RWStatusBarAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RWStatusBarAlpha.h"; sourceTree = "<group>"; };
+		3337C87A24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RWStatusBarAlpha.m"; sourceTree = "<group>"; };
+		6A55F02EADCD132E28F65794 /* Pods-RWNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWNavigationBar.debug.xcconfig"; path = "Target Support Files/Pods-RWNavigationBar/Pods-RWNavigationBar.debug.xcconfig"; sourceTree = "<group>"; };
+		745F4235EFCDCA4DF808BC15 /* Pods-RWNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWNavigationBar.release.xcconfig"; path = "Target Support Files/Pods-RWNavigationBar/Pods-RWNavigationBar.release.xcconfig"; sourceTree = "<group>"; };
+		C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWNavigationBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3337C80324E130D30022C95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BC76086E179A0458A17A51 /* libPods-RWNavigationBar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C81E24E130D70022C95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C82924E130D70022C95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4F84E5E6ECC9FE03C5254A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3337C7FD24E130D30022C95E = {
+			isa = PBXGroup;
+			children = (
+				3337C80824E130D30022C95E /* RWNavigationBar */,
+				3337C82424E130D70022C95E /* RWNavigationBarTests */,
+				3337C82F24E130D70022C95E /* RWNavigationBarUITests */,
+				3337C80724E130D30022C95E /* Products */,
+				A9109ADF5B3BA833E10AEF3F /* Pods */,
+				0E4F84E5E6ECC9FE03C5254A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3337C80724E130D30022C95E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3337C80624E130D30022C95E /* RWNavigationBar.app */,
+				3337C82124E130D70022C95E /* RWNavigationBarTests.xctest */,
+				3337C82C24E130D70022C95E /* RWNavigationBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3337C80824E130D30022C95E /* RWNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				3337C80924E130D30022C95E /* AppDelegate.h */,
+				3337C80A24E130D30022C95E /* AppDelegate.m */,
+				3337C80F24E130D30022C95E /* RWAController.h */,
+				3337C83F24E132B90022C95E /* RWAController.m */,
+				3337C83E24E132B90022C95E /* RWBController.h */,
+				3337C86524E236990022C95E /* RWBController.m */,
+				3337C85524E1384A0022C95E /* RWCController.h */,
+				3337C85624E1384A0022C95E /* RWCController.m */,
+				3337C84124E133F30022C95E /* RWNavigationBarTransition */,
+				3337C81224E130D30022C95E /* Main.storyboard */,
+				3337C81524E130D70022C95E /* Assets.xcassets */,
+				3337C81724E130D70022C95E /* LaunchScreen.storyboard */,
+				3337C81A24E130D70022C95E /* Info.plist */,
+				3337C81B24E130D70022C95E /* main.m */,
+			);
+			path = RWNavigationBar;
+			sourceTree = "<group>";
+		};
+		3337C82424E130D70022C95E /* RWNavigationBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				3337C82524E130D70022C95E /* RWNavigationBarTests.m */,
+				3337C82724E130D70022C95E /* Info.plist */,
+			);
+			path = RWNavigationBarTests;
+			sourceTree = "<group>";
+		};
+		3337C82F24E130D70022C95E /* RWNavigationBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3337C83024E130D70022C95E /* RWNavigationBarUITests.m */,
+				3337C83224E130D70022C95E /* Info.plist */,
+			);
+			path = RWNavigationBarUITests;
+			sourceTree = "<group>";
+		};
+		3337C84124E133F30022C95E /* RWNavigationBarTransition */ = {
+			isa = PBXGroup;
+			children = (
+				3337C85924E140CA0022C95E /* RWSwizzle.h */,
+				3337C85A24E140CA0022C95E /* RWSwizzle.m */,
+				3337C85C24E1434B0022C95E /* RWWeakObjectContainer.h */,
+				3337C85D24E1434B0022C95E /* RWWeakObjectContainer.m */,
+				3337C86224E149520022C95E /* UIViewController+RWNavigationBarTransition.h */,
+				3337C86324E149520022C95E /* UIViewController+RWNavigationBarTransition.m */,
+				3337C85F24E145B80022C95E /* UINavigationController+RWNavigationBarTransition.h */,
+				3337C86024E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m */,
+				3337C87024E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.h */,
+				3337C87124E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m */,
+				3337C87924E29AC70022C95E /* UIViewController+RWStatusBarAlpha.h */,
+				3337C87A24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m */,
+			);
+			path = RWNavigationBarTransition;
+			sourceTree = "<group>";
+		};
+		A9109ADF5B3BA833E10AEF3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A55F02EADCD132E28F65794 /* Pods-RWNavigationBar.debug.xcconfig */,
+				745F4235EFCDCA4DF808BC15 /* Pods-RWNavigationBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3337C80524E130D30022C95E /* RWNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3337C83524E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBar" */;
+			buildPhases = (
+				8E3F28EABF697D487A4D46D3 /* [CP] Check Pods Manifest.lock */,
+				3337C80224E130D30022C95E /* Sources */,
+				3337C80324E130D30022C95E /* Frameworks */,
+				3337C80424E130D30022C95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RWNavigationBar;
+			productName = RWNavigationBar;
+			productReference = 3337C80624E130D30022C95E /* RWNavigationBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3337C82024E130D70022C95E /* RWNavigationBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3337C83824E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBarTests" */;
+			buildPhases = (
+				3337C81D24E130D70022C95E /* Sources */,
+				3337C81E24E130D70022C95E /* Frameworks */,
+				3337C81F24E130D70022C95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3337C82324E130D70022C95E /* PBXTargetDependency */,
+			);
+			name = RWNavigationBarTests;
+			productName = RWNavigationBarTests;
+			productReference = 3337C82124E130D70022C95E /* RWNavigationBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3337C82B24E130D70022C95E /* RWNavigationBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3337C83B24E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBarUITests" */;
+			buildPhases = (
+				3337C82824E130D70022C95E /* Sources */,
+				3337C82924E130D70022C95E /* Frameworks */,
+				3337C82A24E130D70022C95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3337C82E24E130D70022C95E /* PBXTargetDependency */,
+			);
+			name = RWNavigationBarUITests;
+			productName = RWNavigationBarUITests;
+			productReference = 3337C82C24E130D70022C95E /* RWNavigationBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3337C7FE24E130D30022C95E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Liven;
+				TargetAttributes = {
+					3337C80524E130D30022C95E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					3337C82024E130D70022C95E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3337C80524E130D30022C95E;
+					};
+					3337C82B24E130D70022C95E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3337C80524E130D30022C95E;
+					};
+				};
+			};
+			buildConfigurationList = 3337C80124E130D30022C95E /* Build configuration list for PBXProject "RWNavigationBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3337C7FD24E130D30022C95E;
+			productRefGroup = 3337C80724E130D30022C95E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3337C80524E130D30022C95E /* RWNavigationBar */,
+				3337C82024E130D70022C95E /* RWNavigationBarTests */,
+				3337C82B24E130D70022C95E /* RWNavigationBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3337C80424E130D30022C95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3337C81924E130D70022C95E /* LaunchScreen.storyboard in Resources */,
+				3337C81624E130D70022C95E /* Assets.xcassets in Resources */,
+				3337C81424E130D30022C95E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C81F24E130D70022C95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C82A24E130D70022C95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E3F28EABF697D487A4D46D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RWNavigationBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3337C80224E130D30022C95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3337C85724E1384A0022C95E /* RWCController.m in Sources */,
+				3337C87224E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m in Sources */,
+				3337C87B24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m in Sources */,
+				3337C86424E149520022C95E /* UIViewController+RWNavigationBarTransition.m in Sources */,
+				3337C80B24E130D30022C95E /* AppDelegate.m in Sources */,
+				3337C85B24E140CA0022C95E /* RWSwizzle.m in Sources */,
+				3337C86624E236990022C95E /* RWBController.m in Sources */,
+				3337C85E24E1434B0022C95E /* RWWeakObjectContainer.m in Sources */,
+				3337C81C24E130D70022C95E /* main.m in Sources */,
+				3337C86124E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m in Sources */,
+				3337C84024E132B90022C95E /* RWAController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C81D24E130D70022C95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3337C82624E130D70022C95E /* RWNavigationBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337C82824E130D70022C95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3337C83124E130D70022C95E /* RWNavigationBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3337C82324E130D70022C95E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3337C80524E130D30022C95E /* RWNavigationBar */;
+			targetProxy = 3337C82224E130D70022C95E /* PBXContainerItemProxy */;
+		};
+		3337C82E24E130D70022C95E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3337C80524E130D30022C95E /* RWNavigationBar */;
+			targetProxy = 3337C82D24E130D70022C95E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3337C81224E130D30022C95E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3337C81324E130D30022C95E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3337C81724E130D70022C95E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3337C81824E130D70022C95E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3337C83324E130D70022C95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3337C83424E130D70022C95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3337C83624E130D70022C95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A55F02EADCD132E28F65794 /* Pods-RWNavigationBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39W36KN2YK;
+				INFOPLIST_FILE = RWNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3337C83724E130D70022C95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 745F4235EFCDCA4DF808BC15 /* Pods-RWNavigationBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39W36KN2YK;
+				INFOPLIST_FILE = RWNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3337C83924E130D70022C95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RWNavigationBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWNavigationBar.app/RWNavigationBar";
+			};
+			name = Debug;
+		};
+		3337C83A24E130D70022C95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RWNavigationBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWNavigationBar.app/RWNavigationBar";
+			};
+			name = Release;
+		};
+		3337C83C24E130D70022C95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RWNavigationBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RWNavigationBar;
+			};
+			name = Debug;
+		};
+		3337C83D24E130D70022C95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RWNavigationBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TiantianTrade.RWNavigationBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RWNavigationBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3337C80124E130D30022C95E /* Build configuration list for PBXProject "RWNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3337C83324E130D70022C95E /* Debug */,
+				3337C83424E130D70022C95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3337C83524E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3337C83624E130D70022C95E /* Debug */,
+				3337C83724E130D70022C95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3337C83824E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3337C83924E130D70022C95E /* Debug */,
+				3337C83A24E130D70022C95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3337C83B24E130D70022C95E /* Build configuration list for PBXNativeTarget "RWNavigationBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3337C83C24E130D70022C95E /* Debug */,
+				3337C83D24E130D70022C95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3337C7FE24E130D30022C95E /* Project object */;
+}
