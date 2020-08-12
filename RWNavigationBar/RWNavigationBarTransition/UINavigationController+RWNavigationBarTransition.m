@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 #import "UIViewController+RWNavigationBarTransition.h"
+#import "UINavigationBar+RWNavigationBarTransition.h"
 
 #import "RWWeakObjectContainer.h"
 #import "RWSwizzle.h"
@@ -148,12 +149,8 @@
 
 - (void)setRw_naviBarBackgroundViewHidden:(BOOL)rw_naviBarBackgroundViewHidden {
     objc_setAssociatedObject(self, @selector(rw_naviBarBackgroundViewHidden), @(rw_naviBarBackgroundViewHidden), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    /// 适配iOS10之前后iOS10之后的
-    [self.navigationBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:NSClassFromString(@"_UIBarBackground")] || [obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
-            obj.alpha = rw_naviBarBackgroundViewHidden?0:1;
-        }
-    }];
+    UIView *bacgroundView = self.navigationBar.rw_backgroundView;
+    bacgroundView.alpha = rw_naviBarBackgroundViewHidden?0:1;
 }
 
 - (UIViewController *)rw_transitionContextToViewController {

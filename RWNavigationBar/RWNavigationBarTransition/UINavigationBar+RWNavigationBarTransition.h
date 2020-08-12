@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UINavigationBar (RWNavigationBarTransition)
 
-@property (nonatomic, strong) UIView *rw_backgroundView;
+/// 返回_UIBarBackground或_UINavigationBarBackground对象
+- (UIView *)rw_backgroundView;
 
 @end
 

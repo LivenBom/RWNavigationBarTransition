@@ -25,6 +25,7 @@
 
 - (void)rw_layoutSubviews {
     [self rw_layoutSubviews];
+    /// 兼容手动navigationBar中UIBarBackground在不同的系统中的高度(比如iOS13和iOS12.4)
     UIView *backgroundView = self.rw_backgroundView;
     CGRect frame = backgroundView.frame;
     frame.size.height = self.frame.size.height + fabs(frame.origin.y);

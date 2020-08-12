@@ -1,6 +1,6 @@
 **开源库前缀统一修改为：RW，取义于Review一词，好的代码都是通过程序员一般般的review**
 
-
+![RWLogo](https://i.loli.net/2020/08/12/67jIvD4AeSHs1FC.png)
 
 # RWNavigationBarTransition
 
@@ -262,6 +262,91 @@ UIView *_statusBar = nil;
 ![image-20200715143403667](https://i.loli.net/2020/07/15/B68dLgIHOrm7XZl.png)
 
 ![image-20200715143504939](https://i.loli.net/2020/07/15/jeFmacJNpuIv3UE.png)
+
+
+
+# BUG修复记录：
+
+* ### 问题一
+
+> 在iphone6 12.4的系统上，出现以下的“断层”的问题
+> <img src="https://i.loli.net/2020/08/12/UVpQamxAOM1JWIR.png" alt="image-20200812160414246" style="zoom:25%;" />
+
+**BUG分析如下：**
+
+![image-20200812160915907](https://i.loli.net/2020/08/12/ZYyofFmLubQCiOG.png)
+
+![image-20200812160521077](https://i.loli.net/2020/08/12/xJfzgNikSrb13Av.png)
+
+```objc
+/// 自定义的导航栏代码
+UINavigationBar *tempBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+tempBar.backgroundColor = UIColor.blueColor;
+[self.view addSubview:tempBar];
+```
+
+从上面的navigationBar的层级截图可以看得出来两张图的结构有所不同，主要体现在设置导航栏样式的层级_UIBarBackground的大小和坐标（蓝色上一层的框框就是 _UIBarBackground），而我们在设置创建的过渡导航栏的导航栏样式，或者是说设置navigationController.navigationBar的也好，都是通过设置backgroundImage完成的，也就是设置 _UIBarBackground上的子视图完成，所以才会出现iOS12.4断层的BUG
+
+（推测：
+
+1、手动创建的navigationBar和导航栏navigationController自带的navigationBar是不一样的，navigationController在创建navigationBar的时候应该是有对_UIBarBackground的frame进行设置
+
+2、新版本的navigationBar中对_UIBarBackground的frame默认是navigationBar.bounds
+
+）
+
+思路就是将_UIBarBackground的大小设置跟UINavigationBar的一样，以下是两个关键带代码片段
+
+```objc
+/// 第一
+/// UIViewController+RWNavigationBarTransition.m 文件
+/*
+	在设置过渡导航栏rw_transitionNavigationBar.frame的时候，拿的是UIBarBackground的frame
+	这样做的目的是让创建的导航栏rw_transitionNavigationBar的高度能覆盖到状态栏，这样便于设置第二步中的UIBarBackground的高度
+*/
+UIView *backgroundView = self.navigationController.navigationBar.rw_backgroundView;
+CGRect rect = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
+self.rw_transitionNavigationBar.frame = rect;
+```
+
+```objc
+/// 第二
+@implementation UINavigationBar (RWNavigationBarTransition)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        RWSwizzleMethod([self class],
+                        @selector(layoutSubviews),
+                        [self class],
+                        @selector(rw_layoutSubviews));
+    });
+}
+
+- (void)rw_layoutSubviews {
+    [self rw_layoutSubviews];
+  	/// 这里就兼容了上面截图出现的两种情况
+    UIView *backgroundView = self.rw_backgroundView;
+    CGRect frame = backgroundView.frame;
+    frame.size.height = self.frame.size.height + fabs(frame.origin.y);
+    backgroundView.frame = frame;
+}
+
+- (UIView *)rw_backgroundView {
+    /// 适配iOS10之前后iOS10之后的
+    __block UIView *backgroundView = nil;
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:NSClassFromString(@"_UIBarBackground")] || [obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
+            backgroundView = obj;
+            *stop = YES;
+        }
+    }];
+    return backgroundView;
+}
+
+@end
+
+```
 
 
 
