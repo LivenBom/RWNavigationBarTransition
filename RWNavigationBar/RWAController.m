@@ -28,6 +28,15 @@
     [btn addTarget:self action:@selector(pushAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 
+    NSLog(@"添加假导航栏前 ：%@ 的ViewFrame:%@",NSStringFromClass(self.class),NSStringFromCGRect(self.view.frame));
+    
+//    self.view.clipsToBounds = NO;
+//    UIView *tempView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+//    tempView.backgroundColor = UIColor.blueColor;
+//    [self.view addSubview:tempView];
+//    UINavigationBar *tempBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
+//    tempBar.backgroundColor = UIColor.blueColor;
+//    [self.view addSubview:tempBar];
 }
 
 

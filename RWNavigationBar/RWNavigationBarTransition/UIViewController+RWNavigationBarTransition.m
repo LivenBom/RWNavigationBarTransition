@@ -9,6 +9,7 @@
 #import "UIViewController+RWNavigationBarTransition.h"
 #import "UINavigationController+RWNavigationBarTransition.h"
 #import "UIViewController+RWStatusBarAlpha.h"
+#import "UINavigationBar+RWNavigationBarTransition.h"
 #import "RWSwizzle.h"
 
 #import <objc/runtime.h>
@@ -107,7 +108,6 @@
     if ([self.navigationController.viewControllers.lastObject isEqual:self]) {
         self.navigationController.rw_naviBarBackgroundViewHidden = NO;
     }
-    
     /// 设置当前viewcontroller状态栏alpha
     self.rw_statusBarAlpha = self.rw_statusBarAlpha;
     
@@ -121,29 +121,11 @@
     if (!self.view.window) {
         return;
     }
-    /// 适配iOS10之前后iOS10之后的
-    __block UIView *backgroundView = nil;
-    [self.navigationController.navigationBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:NSClassFromString(@"_UIBarBackground")] || [obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
-            backgroundView = obj;
-            *stop = YES;
-        }
-    }];
+
     /// 获取真导航栏的frame，再赋值给假的导航栏
+    UIView *backgroundView = self.navigationController.navigationBar.rw_backgroundView;
     CGRect rect = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
     self.rw_transitionNavigationBar.frame = rect;
-    
-//    CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
-//    /// 状态栏隐藏
-//    BOOL statusBarHidden = [UIApplication sharedApplication].statusBarHidden;
-//    if (statusBarHidden) {
-//        /// 状态栏隐藏了，[UIApplication sharedApplication].statusBarFrame返回的frame是CGRectZero
-//        CGFloat statusBarHeight = self.navigationController.navigationBar.frame.origin.y;
-//        CGRect spaceRect = self.view.frame;
-//        spaceRect.origin.y += statusBarHeight;
-//        self.view.frame = spaceRect;
-//    }
-//    NSLog(@"statusBarFrame:%@ statusBarHidden:%d ,navigationBar.frame ：%@,viewController.view.frame:%@",NSStringFromCGRect(statusBarFrame),statusBarHidden,NSStringFromCGRect(self.navigationController.navigationBar.frame),NSStringFromCGRect(self.view.frame));
 }
 
 

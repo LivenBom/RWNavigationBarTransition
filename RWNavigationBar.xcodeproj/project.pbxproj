@@ -23,6 +23,8 @@
 		3337C86624E236990022C95E /* RWBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C86524E236990022C95E /* RWBController.m */; };
 		3337C87224E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C87124E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m */; };
 		3337C87B24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3337C87A24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m */; };
+		339BF17024E3D4FE006880CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BF16F24E3D4FE006880CA /* libc++.tbd */; };
+		339BF17624E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 339BF17524E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.m */; };
 		64BC76086E179A0458A17A51 /* libPods-RWNavigationBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,9 @@
 		3337C87124E293A20022C95E /* UIStatusBarManager+RWStatusBarAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStatusBarManager+RWStatusBarAlpha.m"; sourceTree = "<group>"; };
 		3337C87924E29AC70022C95E /* UIViewController+RWStatusBarAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RWStatusBarAlpha.h"; sourceTree = "<group>"; };
 		3337C87A24E29AC70022C95E /* UIViewController+RWStatusBarAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RWStatusBarAlpha.m"; sourceTree = "<group>"; };
+		339BF16F24E3D4FE006880CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		339BF17424E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+RWNavigationBarTransition.h"; sourceTree = "<group>"; };
+		339BF17524E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+RWNavigationBarTransition.m"; sourceTree = "<group>"; };
 		6A55F02EADCD132E28F65794 /* Pods-RWNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWNavigationBar.debug.xcconfig"; path = "Target Support Files/Pods-RWNavigationBar/Pods-RWNavigationBar.debug.xcconfig"; sourceTree = "<group>"; };
 		745F4235EFCDCA4DF808BC15 /* Pods-RWNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWNavigationBar.release.xcconfig"; path = "Target Support Files/Pods-RWNavigationBar/Pods-RWNavigationBar.release.xcconfig"; sourceTree = "<group>"; };
 		C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWNavigationBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339BF17024E3D4FE006880CA /* libc++.tbd in Frameworks */,
 				64BC76086E179A0458A17A51 /* libPods-RWNavigationBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +116,7 @@
 		0E4F84E5E6ECC9FE03C5254A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				339BF16F24E3D4FE006880CA /* libc++.tbd */,
 				C2E121A07DE9945F1BFBBFBD /* libPods-RWNavigationBar.a */,
 			);
 			name = Frameworks;
@@ -183,6 +190,8 @@
 				3337C85A24E140CA0022C95E /* RWSwizzle.m */,
 				3337C85C24E1434B0022C95E /* RWWeakObjectContainer.h */,
 				3337C85D24E1434B0022C95E /* RWWeakObjectContainer.m */,
+				339BF17424E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.h */,
+				339BF17524E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.m */,
 				3337C86224E149520022C95E /* UIViewController+RWNavigationBarTransition.h */,
 				3337C86324E149520022C95E /* UIViewController+RWNavigationBarTransition.m */,
 				3337C85F24E145B80022C95E /* UINavigationController+RWNavigationBarTransition.h */,
@@ -369,6 +378,7 @@
 				3337C86624E236990022C95E /* RWBController.m in Sources */,
 				3337C85E24E1434B0022C95E /* RWWeakObjectContainer.m in Sources */,
 				3337C81C24E130D70022C95E /* main.m in Sources */,
+				339BF17624E3E489006880CA /* UINavigationBar+RWNavigationBarTransition.m in Sources */,
 				3337C86124E145B80022C95E /* UINavigationController+RWNavigationBarTransition.m in Sources */,
 				3337C84024E132B90022C95E /* RWAController.m in Sources */,
 			);
